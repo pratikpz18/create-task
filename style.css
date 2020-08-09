@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #b4f1f1;
+	font-family: "Poppins", sans-serif ;
+	min-height: 100vh;
+	overflow: hidden;
+}
+header,
+form{
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+	color:#1e6262;
+	letter-spacing: 2px;
+	word-spacing: 0.7rem;
+	font-weight: 800;
+	margin-top: 5%;
+	text-shadow: 3px 2px 2px grey;
+}
+form input,form button{
+	padding: 8px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	width: max-content;
+	text-transform: uppercase;
+}
+form input:focus{
+    border-bottom: 2px solid grey;
+}
+form button{
+	color: #085f63;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+form button:hover{
+	color: grey;
+	transform: scale(1.2);
+}
+.container{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.list{
+	display: flex;
+	width:70%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+    margin: 1rem auto;
+}
+.task-li{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	letter-spacing: 2px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	user-select: none;
+	cursor: pointer;
+	list-style: none;
+	color: #1e6262 ;
+	text-align: center;
+}
